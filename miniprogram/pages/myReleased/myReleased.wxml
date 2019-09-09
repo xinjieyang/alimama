@@ -1,0 +1,14 @@
+<view wx:for="{{good_list}}">
+  <van-card num="1" 
+  price="{{item.price}}" 
+  desc="{{item.gtype}}" 
+  title="{{item.gname}}"
+  thumb="{{item.yulanimg[0]}}"
+  bind:click="viewItem">
+  <view slot="footer">
+    <van-button data-id="{{item._id}}" size="small" type="primary"plain bind:click="viewItem">编辑商品</van-button>
+  </view>
+
+  </van-card>
+</view>
+

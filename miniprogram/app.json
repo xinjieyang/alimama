@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/message/message",
+    "pages/mine/mine",
+    "pages/release_goods/release_goods",
+    "pages/search_goods/search_goods",
+    "pages/editMessage/editMessage",
+    "pages/login/login",
+    "pages/order/order",
+    "pages/success_order1/success_order1",
+    "pages/women_wear/women_wear",
+    "pages/detail/detail",
+    "pages/owner/owner",
+    "pages/man_wear/man_wear",
+    "pages/wear/wear",
+    "pages/bag/bag",
+    "pages/food/food",
+    "pages/makeup/makeup",
+    "pages/day/day",
+    "pages/else/else",
+    "pages/chat/chat",
+    "pages/displaySearch/displaySearch",
+    "pages/pay/pay",
+    "pages/shopcarts/shopcarts",
+    "pages/seller_order/seller_order",
+    "pages/myReleased/myReleased",
+    "pages/orderDetail/orderDetail",
+    "pages/editGoods/editGoods",
+    "pages/aboutUs/aboutUs"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "北洋阿里麻麻",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "商城",
+        "iconPath": "/images/home.png",
+        "selectedIconPath": "/images/home@selected.png"
+      },
+      {
+        "pagePath": "pages/shopcarts/shopcarts",
+        "text": "购物车",
+        "iconPath": "/images/cart.png",
+        "selectedIconPath": "/images/cart@selected.png"
+      },
+      {
+        "pagePath": "pages/chat/chat",
+        "text": "消息",
+        "iconPath": "/images/1.jpg",
+        "selectedIconPath": "/images/2.jpg"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "/images/my.png",
+        "selectedIconPath": "/images/my@selected.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,73 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"enhance": true
+	},
+	"appid": "wx4cad69067b32cb29",
+	"projectname": "cloudVersion0",
+	"libVersion": "2.8.1",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "db guide",
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "gooddetail",
+					"pathName": "pages/detail/detail",
+					"query": "id=624d0373-796d-4d58-8af1-3654d6b6889c",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "hhh",
+					"pathName": "pages/detail/detail",
+					"query": "id=5d262bd45d68c86e0d64f34d7fe314bf",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "owner",
+					"pathName": "pages/owner/owner",
+					"query": "id=owRPn5WqCbr2CP67XtgWgbrb5ue0",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单",
+					"pathName": "pages/pay/pay",
+					"query": "id=5d262bd45d68c86e0d64f34d7fe314bf",
+					"scene": null
+				}
+			]
+		}
+	}
+}

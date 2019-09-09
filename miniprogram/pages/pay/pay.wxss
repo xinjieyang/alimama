@@ -1,0 +1,32 @@
+/* miniprogram/pages/pay/pay.wxss */
+page {
+  height: 100%;
+  width: 100%;
+  background: #f4f4f4;
+}
+
+.info-title{ 
+  background: #fff; 
+  padding:10px 15px;
+  font-size: 15px;
+  }
+
+.box{
+   padding:0 10px;
+   background:#fff;
+   }
+
+.details_box{
+   margin-top:10px;
+   padding:0 10px;
+   background:#fff;
+   }
+
+.button1{
+   margin-top:0px;
+   }
+
+.button2{
+   margin-top:0px;
+   background:red;
+   }

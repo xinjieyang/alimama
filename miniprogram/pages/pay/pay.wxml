@@ -1,0 +1,58 @@
+<view class='box'>
+  <view style="height:40px;line-height: 40px;border-bottom:1px solid #f5f5f5;font-size:32rpx;color:#A2A2A2">
+    <view>买家信息></view>
+  </view>
+  <view class="info-title">
+    <text>收货人：</text>
+    <text style="float:right">{{users[0].uname}}</text>
+  </view>
+  <view class="info-title">
+    <text>联系电话：</text>
+    <text style="float:right">{{users[0].phone_number}}</text>
+  </view>
+</view>
+
+<view class='details_box'>
+  <view style="height:40px;line-height: 40px;border-bottom:1px solid #f5f5f5;font-size:32rpx;color:#A2A2A2">
+    <view>卖家信息></view>
+  </view>
+  <view class="info-title">
+    <text>卖家昵称:</text>
+    <text style="float:right">{{owner[0].uname}}</text>
+  </view>
+  <view class="info-title">
+    <text>卖家联系方式:</text>
+    <text style="float:right">{{owner[0].phone_number}}</text>
+  </view>
+</view>
+
+<view class='details_box'>
+  <view style="height:40px;line-height: 40px;border-bottom:1px solid #f5f5f5;font-size:32rpx;color:#A2A2A2">
+    <view>商品信息></view>
+  </view>
+  <view class="info-title">
+    <text>商品名称:</text>
+    <text style="float:right">{{good.gname}}</text>
+  </view>
+  <view class="info-title">
+    <text>商品价格：</text>
+    <text style="float:right">{{good.price}}元</text>
+  </view>
+  <view class="info-title">
+    <text>商品分类：</text>
+    <text style="float:right">{{good.gtype}}</text>
+  </view>
+  <view class="info-title">
+    <text>商品新旧程度：</text>
+    <text style="float:right">{{good.newOrOld}}</text>
+  </view>
+</view>
+
+
+<view class="button1">
+  <button bindtap="sure" type="primary">确认下单</button>
+</view>
+<view class="button2">
+  <button bindtap="no">取消订单</button>
+</view>
+

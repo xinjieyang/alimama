@@ -1,0 +1,10 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#142341",
+  "navigationBarTitleText": "日用品",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "van-card": "../../dist/card/index",
+    "van-button": "../../dist/button/index"
+  }
+}

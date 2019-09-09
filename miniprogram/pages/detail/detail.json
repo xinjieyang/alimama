@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "van-button": "../../dist/button/index"
+  },
+
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#142341",
+  "navigationBarTitleText": "商品详情",
+  "navigationBarTextStyle": "white"
+
+
+}

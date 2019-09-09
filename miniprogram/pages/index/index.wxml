@@ -1,0 +1,93 @@
+<view class='root'>
+  <scroll-view class='content' scroll-y >
+    <view class='portals'>
+      <view class="search">
+        <navigator url='/pages/search_goods/search_goods' class="input">
+          <image class="icon"></image>
+          <text class="txt">商品搜索</text>
+        </navigator>
+      </view>
+
+      <swiper class='slide' autoplay indicator-dots>
+        <swiper-item>
+          <image src='../../images/first1.png'></image>
+         </swiper-item>
+          <swiper-item>
+            <image src='../../images/first2.png'></image>
+          </swiper-item>
+          <swiper-item>
+            <image src='../../images/first3.png'></image>
+          </swiper-item>
+        </swiper>
+
+
+      <view class='search_area'>
+        <view class='search_row'>
+          <view class='search_row_left'>分类搜索</view>
+          <image class='search_row_right' src='/images/goright.png'></image>
+      </view>  
+
+      <view class='search_column'>
+        <view class='search_column_item'>
+          <navigator url='/pages/women_wear/women_wear'>
+            <image class='search_column_item_image' src='../../images/nvzhuang.png'></image>
+            <view class='search_column_item_text'>女装</view>
+          </navigator>
+          
+        </view>
+        <view class='search_column_item'>
+          <navigator url='/pages/man_wear/man_wear'>
+            <image class='search_column_item_image' src='../../images/nanzhuang.png'></image>
+            <view class='search_column_item_text'>男装</view>
+          </navigator>
+        </view>
+
+        <view class='search_column_item'>
+          <navigator url='/pages/wear/wear'>
+            <image class='search_column_item_image' src='../../images/peishi.png'></image>
+            <view class='search_column_item_text'>配饰</view>
+          </navigator>
+        </view>
+
+        <view class='search_column_item'>
+          <navigator url='/pages/bag/bag'>
+            <image class='search_column_item_image' src='../../images/xiangbao.png'></image>
+            <view class='search_column_item_text'>箱包</view>
+          </navigator>
+        </view>
+    </view>
+
+    <view class='search_column'>
+        <view class='search_column_item'>
+          <navigator url='/pages/food/food'>
+            <image class='search_column_item_image' src='../../images/shipin.png'></image>
+            <view class='search_column_item_text'>食品</view>
+          </navigator>
+        </view>
+
+        <view class='search_column_item'>
+          <navigator url='/pages/makeup/makeup'>
+            <image class='search_column_item_image' src='../../images/meizhuang.png'></image>
+            <view class='search_column_item_text'>美妆</view>
+          </navigator>
+        </view>
+
+        <view class='search_column_item'>
+          <navigator url='/pages/day/day'>
+            <image class='search_column_item_image' src='../../images/riyongpin.png'></image>
+            <view class='search_column_item_text'>日用品</view>
+          </navigator>
+        </view>
+
+        <view class='search_column_item'>
+          <navigator url='/pages/else/else'>
+            <image class='search_column_item_image' src='../../images/qita.png'></image>
+            <view class='search_column_item_text'>其他</view>
+          </navigator>
+        </view>
+    </view>
+
+    </view>
+    </view>
+  </scroll-view>
+</view>

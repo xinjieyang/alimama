@@ -1,0 +1,12 @@
+<view wx:for="{{user}}">
+  <van-card 
+  title="{{item.nicheng}}"
+  thumb="{{item.touxiang}}"
+  bind:click="viewItem">
+  <view slot="footer">
+    <van-button data-sender="{{item.id}}" data-receiver="{{item.zijiid}}" size="small" type="primary"plain bind:click="viewItem">goto聊天</van-button>
+  </view>
+
+  </van-card>
+</view>
+

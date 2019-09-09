@@ -1,0 +1,2 @@
+<!--miniprogram/pages/aboutUs/aboutUs.wxml-->
+<image class='Us' src='/images/aboutUs.png'></image>

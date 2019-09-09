@@ -1,0 +1,21 @@
+<view class="cart-box">
+  <!-- wx:for 渲染购物车列表 -->
+  <view wx:for="{{ssCarts}}" wx:key="{{ssCarts}}" class='cart-goods'>
+
+    <view class='cart-img'>
+      <image class="cart-thumb" src="{{item.yulanimg[0]}}"></image>
+      <view class='cart-message'>
+        <text class='name'>{{item.gname}}</text>
+        <text class='type'>{{item.gtype}}</text>
+        <text class='viewq' data-id="{{item._id}}" bindtap="viewItem">商品详情</text>
+        <text class='price'>￥{{item.price}}</text>
+      </view>
+    </view>
+    <!-- 商品 id 卖家 openid -->
+    <text class='buy' bindtap='toBuy' data-index="{{index}}" data-id="{{m1}}" data-openid="{{m2}}" form-type='submit'> 购买 </text>
+    <!-- 删除按钮 -->
+    <text bindtap="deleteList" data-index="{{index}}" class='delete'> x </text>
+
+  </view>
+  <view class='bottom'>没有物品啦~_~</view>
+</view>

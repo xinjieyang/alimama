@@ -1,0 +1,58 @@
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" class="banner" duration="{{duration}}" circular="{{duration}}">
+  <block wx:for="{{good.yulanimg}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" mode="aspectFill" data-src='{{item}}' bindtap="previewImage"/>
+    </swiper-item>
+  </block>
+</swiper>
+<!--商品幻灯片 end-->
+<view class="info-price clear">
+  <view class='price'>￥{{good.price}} </view>
+</view>
+<view class="info-title">
+    <text>{{good.gname}}</text>
+</view>
+
+<view style="border-top:1px solid #F6F6F6;background: #fff; padding:5px 15px;">
+    <view class="clearfix flex grey gridXt" >
+      <block style="display:flex;white-space:pre-line;"><text class="sub">商品描述： {{good.gcomment}}</text></block>
+    </view>
+</view>
+
+<block wx:if="{{pjDataList!=''}}">
+  <!--评价-->
+  <view class='pj_box'>
+    <view style="height:40px;line-height: 40px;border-bottom:1px solid #f5f5f5;">
+     <view style='float:left;font-size:35rpx;'>卖家信息</view>
+     <view>
+        <button data-id="{{good._openid}}" style="float:right;font-size:15px;color:#A2A2A2;"  bindtap="viewItem">查看详情</button>
+     </view>
+     <view class='clear'></view>
+    </view>
+</view>
+</block>
+<!--商品详情-->
+<view class='details_box'>
+  <view style="height:40px;line-height: 40px;border-bottom:1px solid #f5f5f5;font-size:36rpx;">
+     <view>商品详情</view>
+  </view>
+  <view style='padding:10px 0px;'>
+      <view class="wxParse" style="font-size:36rpx">
+         <text>商品状态： {{good.goodsState}}\n</text>
+         <text>商品分类： {{good.gtype}}\n</text>
+         <text>新旧程度： {{good.newOrOld}}\n</text>
+      </view>
+    </view>
+</view>
+
+<!--底部浮动 start-->
+<view class="foot-nav mt15">
+  <view class="flex con gridXt tc">
+    <van-button data-id="{{good._openid}}" bind:click="callOwner" type="default">联系卖家</van-button>
+    <van-button data-id="{{good._id}}" bind:click="inCar" type="default">加入购物车</van-button>
+    
+    <view class="add-cart sub f16">
+      <button data-id="{{good._id}}" data-openid="{{good._openid}}" class="add-cart-btn" bindtap='buy'>立即购买</button>
+    </view>
+  </view>
+</view>

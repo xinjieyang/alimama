@@ -1,0 +1,76 @@
+<!-- <view class="container"> -->
+  <view class='userInfo'>
+      <image src='{{avatarUrl}}'></image>
+      <view class='name'>
+        <text class='nickname'>{{username}}</text>
+          <text class='editMessage' bindtap="goEditMessage">{{editMessage}}</text>
+        <navigator url='/pages/login/login'>
+          <text class='username' color='red'>{{loginMessage}}</text>
+        </navigator>
+      </view>
+    </view>
+    <view class='separate'></view>
+
+  <view class='user_area'>
+    <view class='user_row' bindtap='goOrder' data-curr='0' data-route='/pages/orders/orders'>
+      <view class='user_row_left' data-curr='0' data-route='/pages/orders/orders'>我的订单</view>
+      <view class='user_row_right' data-curr = '0' data-route='/pages/orders/orders'>全部订单</view>
+      <!-- <image class='user_row_right' src='/images/goright.png' data-index='3' data-route='/pages/orders/orders'></image> -->
+    </view>
+    <view class='user_column'>
+      <view class='user_column_item' bindtap='goOrder' data-curr='1' data-route='/pages/order/order?currtab=1'>
+        <image class='user_column_item_image' src='/images/receive.png' data-index='0'>
+        </image>
+        <view class='user_column_item_text' data-curr='1'>未完成</view>
+      </view>
+      <view class='user_column_item'  data-curr='2' bindtap='goOrder' data-route='/pages/order/order'>
+        <image class='user_column_item_image' src='/images/pendpay.png' data-curr='2'></image>
+        <view class='user_column_item_text' data-curr='2'>已完成</view>
+      </view>
+     
+      
+    </view>
+
+
+    <view class='user_row'>
+       <view class='user_row_left'>我的出单</view>
+       <view class='user_row_right' data-index = '3' data-route='/pages/orders/orders' bindtap="goSellerOrders">全部订单</view>
+    </view>
+    <view class='user_column'>
+    <view class='user_column_item' bindtap='goReleaseGoods'  data-route='/pages/orders/orders'>
+        <image class='user_column_item_image' src='/images/send.png'></image>
+        <view class='user_column_item_text'>发布商品</view>
+      </view>
+     <view class='user_column_item' bindtap='goMyreleased'  data-route='/pages/orders/orders'>
+        <image class='user_column_item_image' src='/images/receive.png'></image>
+        <view class='user_column_item_text'>我的商品</view>
+      </view>
+      <view class='user_column_item' bindtap='yiwancheng' >
+        <image class='user_column_item_image' src='/images/pendpay.png'></image>
+        <view class='user_column_item_text'>已完成</view>
+      </view>
+  </view>
+    
+
+
+
+
+    
+  <view class='user_row'>
+       <view class='user_row_left'>我要反馈</view>
+    </view>
+   <view class='user_column'> 
+    
+    <view class='user_column_item'>
+      <contact-button style="opacity:0;position:absolute;" type="default-dark" session-from="weapp" size="27">
+      </contact-button>
+      <image class='user_column_item_image' src='/images/customer.png'></image>
+      <view class='user_column_item_text'>联系客服</view>
+    </view>
+    <view class='user_column_item' bindtap='aboutUs' data-route='/pages/aboutUs/aboutUs'>
+      <image class='user_column_item_image' src='/images/about_us.png'></image>
+      <view class='user_column_item_text'>关于我们</view>
+    </view>
+  </view>
+  </view>
+<!-- </view> -->

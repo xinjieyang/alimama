@@ -1,0 +1,53 @@
+<!-- <view class='userInfo'>
+  <image src="{{users[0].imgUrl}}"></image>
+</view> -->
+
+
+
+
+<view>
+  <view class="top">
+    <view class="center_top">
+      <view class="center_img">
+        <image src="{{users[0].imgUrl}}"></image>
+      </view>
+    </view>
+    <image src='https://edu.qinhui88.com/assets/wx/image/wave.gif' mode='scaleToFill' class='gif-wave'></image>
+  </view>
+</view>
+
+<block>
+  <view class='pj_box'>
+    <view>
+      <view style='float:left;'>昵称 :</view>
+      <view style='float:right;'>{{users[0].uname}}</view>
+    </view>
+  </view>
+</block>
+
+<block>
+  <view class='pj_box'>
+    <view>
+      <view style='float:left;'>学号 :</view>
+      <view style='float:right;'>{{users[0].sid}}</view>
+    </view>
+  </view>
+</block>
+
+<block>
+  <view class='pj_box'>
+    <view>
+      <view style='float:left;'>地址 :</view>
+      <view style='float:right;'>{{users[0].address}}</view>
+    </view>
+  </view>
+</block>
+
+<block>
+  <view class='pj_box'>
+    <view>
+      <view style='float:left;'>电话 :</view>
+      <view style='float:right;'>{{users[0].phone_number}}</view>
+    </view>
+  </view>
+</block>
